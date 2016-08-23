@@ -1,0 +1,11 @@
+button {
+  float: right;
+}
+
+#time-buttons {
+  display: none;
+}
+
+#output {
+  display: none;
+}

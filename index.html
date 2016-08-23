@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Movie Ticket</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Let's Go To The Movies!</h1>
+      </div>
+      <form>
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="input-name">What's your name?</label>
+              <input type="text" id="input-name" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <label for="input-age">What's your age?</label>
+              <input type="number" id="input-age" class="form-control" placeholder="Age">
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="input-movie">What movie would you like to see?</label>
+              <select class="form-control" id="movie-input">
+                <option>Suicide Squad</option>
+                <option>Star Trek Beyond</option>
+                <option>Sausage Party</option>
+                <option>Hunt For The Wilderpeople</option>
+              </select>
+              <button type="button" id="showtime" class="btn btn-primary">Get Showtimes</button>
+            </div>
+            <div class="form-group" id="time-buttons">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="time" value="3:00pm"checked>
+                  3:00pm
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="time" value="6:00pm">
+                  6:00pm
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="time" value="8:00pm">
+                  8:00pm
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="form-group">
+              <label for="party-number">How Many Are In Your Party?</label>
+              <input type="number" class="form-control" id="party-number" placeholder="party#">
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success">Get a Ticket!</button>
+      </form>
+      <ul id="output">
+        <h2>Ticket Info</h2>
+
+        <p>Name: <span class="name"></span></p>
+        <p>Age: <span class="age"></span></p>
+        <p>Movie: <span class="movie"></span></p>
+        <p>Time: <span class="time"></span></p>
+        <p>Party: <span class="party"></span></p>
+        <p>Price: <span class="price"></span><p>
+      </ul>
+    </div>
+  </body>
+</html>
